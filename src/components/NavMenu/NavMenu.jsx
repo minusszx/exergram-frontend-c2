@@ -1,7 +1,7 @@
 import React from "react";
-import "./Navbar.css";
+import "./NavMenu.css";
 
-function Navbar() {
+function NavMenu() {
   return (
       <div className="navbar">
         <nav>
@@ -9,6 +9,10 @@ function Navbar() {
                 <div className="nav-logo-box">
                     <img className="logo" src="src\Images\Logo\Logo1.svg" alt="logoExergram"/>
                 </div>
+                <ul>
+                    <li><a href="">DASHBOARD</a></li>
+                    <li><a href="">FEED</a></li>
+                </ul>
             </div>
             <div className="right-nav">
                 <ul>
@@ -21,4 +25,4 @@ function Navbar() {
   )
 }
 
-export default Navbar;
+export default NavMenu;
