@@ -4,11 +4,12 @@ import Layout2 from "../layout/Layout2";
 function Dashboard() {
   return (
     <Layout2>
-      <div>Dashboard Component</div>
+      <div className="dashboard-container">
+        <div><h1>Hi! Dashboard Component</h1></div>
+      </div>
     </Layout2>
   );
 }
-
 
 
 
