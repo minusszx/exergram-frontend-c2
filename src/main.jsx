@@ -6,6 +6,8 @@ import "./index.css";
 
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import Signup from "./pages/Signup";
+
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,10 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />,
   },
+  {
+    path: "/signup",
+    element: <Signup />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
