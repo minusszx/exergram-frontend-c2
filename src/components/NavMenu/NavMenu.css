@@ -27,7 +27,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* ##########################################  Navebar  ########################################## */
+/* ##########################################  NaveMenu  ########################################## */
 .navbar {
   background-color: #101115;
   height: 80px;
@@ -50,6 +50,16 @@ nav {
 .logo {
   height: 80px;
   display: block;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+nav ul li {
+  list-style: none;
 }
 
 .right-nav {

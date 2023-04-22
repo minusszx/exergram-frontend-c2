@@ -6,6 +6,7 @@ import "./index.css";
 
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import ActivityPage from "./pages/ActivityPage";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/ActivityPage",
+    element: <ActivityPage />,
   },
 ]);
 

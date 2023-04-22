@@ -1,7 +1,7 @@
 import React from "react";
-import "./Navbar.css";
+import "./NavMenu.css";
 
-function Navbar() {
+function NavMenu() {
   return (
     <div className="navbar">
       <nav>
@@ -13,6 +13,14 @@ function Navbar() {
               alt="logoExergram"
             />
           </div>
+          <ul>
+            <li>
+              <a href="">DASHBOARD</a>
+            </li>
+            <li>
+              <a href="">FEED</a>
+            </li>
+          </ul>
         </div>
         <div className="right-nav">
           <ul>
@@ -27,4 +35,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavMenu;
