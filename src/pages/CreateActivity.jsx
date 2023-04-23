@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../layout/Layout";
-import Radio from "../components/ActivityList/radio-card/Radio";
-import InsertPic from "../components/ActivityList/insert-pic/InsertPic";
-import AcitivityNote from "../components/ActivityList/note/AcitivityNote";
-import ActivityListForm from "../components/ActivityList/form/ActivityListForm";
-import ActivityListButton from "../components/ActivityList/button/ActivityListButton";
+import Radio from "../components/ActivityList/RadioCard-Create/Radio";
+import InsertPic from "../components/ActivityList/InsertPic-Create/InsertPic";
+import AcitivityNote from "../components/ActivityList/Note-Create/AcitivityNote";
+import ActivityListForm from "../components/ActivityList/Form-Create/ActivityListForm";
+import ActivityListButton from "../components/ActivityList/Button-Create/ActivityListButton";
 import "../styles/CreateActivity.css"
 
 const ActivityList = [
