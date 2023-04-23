@@ -1,0 +1,23 @@
+.insert-pic input {
+    display: none;
+}
+
+.insert-pic label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-text);
+    border: none;
+    background: var(--grey-btn-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--white-text);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    height: 168px;
+    width: 299px;
+}
+
+.insert-pic label:hover {
+    background: var(--accent-color);
+}

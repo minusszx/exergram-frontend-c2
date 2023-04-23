@@ -1,0 +1,35 @@
+/* .form-right {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+} */
+
+.duration, 
+.distance {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.form-right label,
+.form-left p {
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-right input {
+    padding: 10px;
+    max-width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    letter-spacing: 1px;
+}
+
+.form-right input::placeholder {
+    opacity: 0.5;
+}

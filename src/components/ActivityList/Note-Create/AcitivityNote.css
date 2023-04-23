@@ -1,0 +1,18 @@
+.note {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: baseline; */
+}
+
+.note textarea {
+    padding: 10px;
+    /* max-width: 100%; */
+    width: 240px;
+    height: 96px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    resize: none;
+}

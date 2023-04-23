@@ -1,0 +1,31 @@
+.btn-container button {
+    font-weight: bold;
+    outline: none;
+    width: 120px;
+    height: 48px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-container button:hover {
+    scale: 1.02;
+    box-shadow: 0 0 3px var(--accent-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    transition: background .3s ease-in-out;
+}
+
+.orange-btn {
+    background-color: var(--accent-color);
+    border: 0;
+    border-radius: 30px;
+    color: var(--white-text);
+}
+
+.other-btn {
+    background-color: var(--grey-btn-color);
+    border-radius: 30px;
+    border: 0;
+    color: var(--white-text);
+}
