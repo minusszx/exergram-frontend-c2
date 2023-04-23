@@ -73,12 +73,12 @@ function SignupRightSide() {
                 <div className="input-container password">
                     <label for="password">Password</label>
                     <input type={passwordInputType} name="password" id="password" placeholder="Must be at least 6 characters" required/>
-                    <i className="password-toggle-icon">{ToggleIcon}</i>
+                    <span className="password-toggle-icon">{ToggleIcon}</span>
                 </div>
                 <div className="input-container password2">
                     <label for="cpassword">Confirm Password</label>
                     <input type={passwordInputType2} name="cpassword" id="cpassword" placeholder="Must be at least 6 characters" required/>
-                    <i className="password-toggle-icon2">{ToggleIcon2}</i>
+                    <span className="password-toggle-icon2">{ToggleIcon2}</span>
                 </div>
                 <button className="signup-btn" type="submit">Sign Up</button>
                 <div className="copy legal">
