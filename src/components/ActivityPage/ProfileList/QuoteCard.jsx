@@ -2,7 +2,7 @@ import React from "react";
 
 const QuoteCard = () => {
   return (
-    <div class="qoute-card">
+    <div class="activity-quote">
       <p>
         LOVE YOUR WORKOUT <br />
         Be safe, feel good, <br />

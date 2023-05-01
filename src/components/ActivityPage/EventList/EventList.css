@@ -1,0 +1,36 @@
+.activity-event-right-sidebar {
+  width: 20%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  margin: 18px 16px 16px;
+  padding: 16px;
+  border-radius: 30px;
+  position: sticky;
+  top: 48px;
+}
+.activity-event-card-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.activity-event-card-detail:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+.activity-event-card-detail img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.activity-event-card-location p {
+  margin-top: 4px;
+  text-align: right;
+  font-size: smaller;
+  margin-bottom: 8px;
+}

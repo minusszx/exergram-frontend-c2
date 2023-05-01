@@ -1,0 +1,56 @@
+.activity-list-main-body {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.activity-card-main-content {
+  width: 100%;
+  height: 47vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+.activity-card-main-img {
+  padding: 16px;
+}
+.activity-card-main-img img {
+  height: 30vh;
+  width: 100%;
+  border-radius: 20px;
+}
+.activity-card-exercise-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.activity-card-exercise-icon {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+}
+.activity-card-exercise-icon i {
+  font-size: 40px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.activity-card-exercise-summary {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.activity-card-exercise-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.activity-card-exercise-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
