@@ -85,13 +85,12 @@ function SignupRightSide() {
                     {/* <span className="password-toggle-icon">{ToggleIcon}</span> */}
                     {!showPassword1 ? <i className="fa-solid fa-eye-slash password-toggle-icon" onClick={() => handleShowPassword(showPassword1, setShowPassword1)}></i> : <i className="fa-solid fa-eye password-toggle-icon" onClick={() => handleShowPassword(showPassword1, setShowPassword1)}></i>
                 }
+
                 </div>
                 <div className="input-container-password2">
                     <label for="cpassword">Confirm Password</label>
                     <input type={showPassword2 ? "text" : "password"} name="cpassword" id="cpassword" placeholder="Must be at least 6 characters" required/>
-                    {/* <span className="password-toggle-icon2">{ToggleIcon2}</span> */}
-                        
-
+                    {/* <span className="password-toggle-icon2">{ToggleIcon2}</span> */}             
                     {!showPassword2 ? <i className="fa-solid fa-eye-slash password-toggle-icon2" onClick={() => handleShowPassword(showPassword2, setShowPassword2)}></i> : <i className="fa-solid fa-eye password-toggle-icon2" onClick={() => handleShowPassword(showPassword2, setShowPassword2)}></i>
                 }
                     
