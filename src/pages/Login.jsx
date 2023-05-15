@@ -26,7 +26,11 @@ function LoginLeftSide() {
 }
 
 function LoginRightSide() {
-    const [passwordInputType, ToggleIcon] = usePasswordToggle();
+    const [showPassword , setShowPassword] = useState(false)
+
+    const handleShowPassword = (state, setStateFn) => {
+        setStateFn(!state)
+    }
 
     return (
         <div className="right-login">
@@ -40,8 +44,9 @@ function LoginRightSide() {
                 </div>
                 <div className="input-container-password">
                     <label for="password">Password</label>
-                    <input type={passwordInputType} name="password" id="password" placeholder="Must be at least 6 characters" required/>
-                    <span className="password-toggle-icon">{ToggleIcon}</span>
+                    <input type={showPassword ? "text" : "password"} name="password" id="password" placeholder="Must be at least 6 characters" required/>
+                    {!showPassword ? <i className="fa-solid fa-eye-slash password-toggle-icon" onClick={() => handleShowPassword(showPassword, setShowPassword)}></i> : <i className="fa-solid fa-eye password-toggle-icon" onClick={() => handleShowPassword(showPassword, setShowPassword)}></i>
+                }
                 </div>
                 <div className="input-container-cta">
                     <label className="checkbox-container">
