@@ -171,10 +171,11 @@ form input[type="date"] {
 .password-toggle-icon,
 .password-toggle-icon2 {
   position: absolute;
-  top: 48px;
+  top: 42px;
   right: 16px;
   color: var(--grey-btn-color);
   cursor: pointer;
+  z-index: 99;
 }
 
 
