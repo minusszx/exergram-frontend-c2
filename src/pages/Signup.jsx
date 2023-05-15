@@ -26,8 +26,17 @@ function SignupLeftSide() {
 }
 
 function SignupRightSide() {
-    const [passwordInputType, ToggleIcon] = usePasswordToggle();
-    const [passwordInputType2, ToggleIcon2] = usePasswordToggle();
+    // const [passwordInputType, ToggleIcon] = usePasswordToggle();
+    // const [passwordInputType2, ToggleIcon2] = usePasswordToggle();
+    const [showPassword1 , setShowPassword1] = useState(false)
+    const [showPassword2 , setShowPassword2] = useState(false)
+
+    const handleShowPassword = (state, setStateFn) => {
+        setStateFn(!state)
+    }
+
+
+
     return (
         <div className="right-signup">
             <form>
@@ -62,23 +71,29 @@ function SignupRightSide() {
                         </select>
                     </div>
                 </div>
-                <div className="input-container email">
+                <div className="input-container-email">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Email address" required/>
                 </div>
-                <div className="input-container username">
+                <div className="input-container-username">
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username" placeholder="Username" required/>
                 </div>
-                <div className="input-container password">
+                <div className="input-container-password">
                     <label for="password">Password</label>
-                    <input type={passwordInputType} name="password" id="password" placeholder="Must be at least 6 characters" required/>
-                    <span className="password-toggle-icon">{ToggleIcon}</span>
+                    <input type={showPassword1 ? "text" : "password"} name="password" id="password" placeholder="Must be at least 6 characters" required/>
+                    {/* <span className="password-toggle-icon">{ToggleIcon}</span> */}
+                    {!showPassword1 ? <i className="fa-solid fa-eye-slash password-toggle-icon" onClick={() => handleShowPassword(showPassword1, setShowPassword1)}></i> : <i className="fa-solid fa-eye password-toggle-icon" onClick={() => handleShowPassword(showPassword1, setShowPassword1)}></i>
+                }
+
                 </div>
-                <div className="input-container password2">
+                <div className="input-container-password2">
                     <label for="cpassword">Confirm Password</label>
-                    <input type={passwordInputType2} name="cpassword" id="cpassword" placeholder="Must be at least 6 characters" required/>
-                    <span className="password-toggle-icon2">{ToggleIcon2}</span>
+                    <input type={showPassword2 ? "text" : "password"} name="cpassword" id="cpassword" placeholder="Must be at least 6 characters" required/>
+                    {/* <span className="password-toggle-icon2">{ToggleIcon2}</span> */}             
+                    {!showPassword2 ? <i className="fa-solid fa-eye-slash password-toggle-icon2" onClick={() => handleShowPassword(showPassword2, setShowPassword2)}></i> : <i className="fa-solid fa-eye password-toggle-icon2" onClick={() => handleShowPassword(showPassword2, setShowPassword2)}></i>
+                }
+                    
                 </div>
                 <button className="signup-btn" type="submit">Sign Up</button>
                 <div className="copy legal">
