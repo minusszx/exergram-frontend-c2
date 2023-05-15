@@ -18,7 +18,7 @@ function Navbar() {
             </div>
         </nav>            
       </div>
-  )
+    )
 }
 
 export default Navbar;
